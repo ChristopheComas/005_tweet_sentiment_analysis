@@ -16,7 +16,7 @@ jobs:
         python-version: '3.12.4'
         auto-update-conda: true
     - name: Create the conda environment
-      run: conda env create --file environment.yml --name test_API
+      run: conda env create --file API/environment.yml --name test_API
     - name: Activate the conda environment
       run: echo "conda activate test_API" >> $GITHUB_ENV
     - name: Lint with flake8
