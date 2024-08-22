@@ -10,14 +10,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Set up Miniconda
-      uses: conda-incubator/setup-miniconda@v2
-      with:
-        python-version: '3.12.4'
-        auto-update-conda: true
-    - name: Create the conda environment
-      run: conda env create --file API/environment.yml --name test_API
-    - name: Activate the conda environment
-      run: conda activate test_API
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: pytest -s
