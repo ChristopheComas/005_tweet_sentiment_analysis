@@ -1,0 +1,25 @@
+name: conda testing sentiment analysis
+
+on: [push]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    strategy:
+      max-parallel: 5
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Miniconda
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        python-version: '3.12.4'
+        auto-update-conda: true
+    - name: Create the conda environment
+      run: conda env create --file API/environment.yml --name test_API
+    - name: Activate the conda environment
+      run: echo "conda activate test_API" >> $GITHUB_ENV
+    - name: Lint with flake8
+      run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+    - name: Test with pytest
+      run: pytest -s
