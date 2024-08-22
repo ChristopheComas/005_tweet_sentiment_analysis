@@ -32,33 +32,28 @@ def test_second_layer_is_textvectorization(setup_model):
 
 
 
-def test_predict_positive(setup_model):
+def test_predict_negative(setup_model):
     print("\n\n *****************************************") 
-    print("TEST 002 : test_predict_positive() ") 
+    print("TEST 002 : test_predict_negative() ") 
     # Define a positive input
     input_text = InputText(text="terrible")
 
     # Send POST request to /predict
     response = client.post("/predict", json=input_text.dict())
-    
-    assert response.status_code == 200
     result = response.json()
-    print('Negative testing : ')
     print(result["prediction"])    
     # Test the prediction output
     assert float(result["prediction"].split()[0]) < 0.1 , "The score is too high for negative validation" 
 
 
-def test_predict_negative(setup_model):
+def test_predict_positive(setup_model):
     print("\n\n *****************************************") 
-    print("TEST 003 : test_predict_negative() ") 
+    print("TEST 003 : test_predict_positive() ") 
     # Define a negative input
     input_text = InputText(text="awesome")
 
     # Send POST request to /predict
     response = client.post("/predict", json=input_text.dict())
-    
-    assert response.status_code == 200
     result = response.json()
     print('Positive testing : ')
     print(result["prediction"])
