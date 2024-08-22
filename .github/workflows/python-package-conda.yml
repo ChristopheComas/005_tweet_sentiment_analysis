@@ -18,6 +18,6 @@ jobs:
     - name: Create the conda environment
       run: conda env create --file API/environment.yml --name test_API
     - name: Activate the conda environment
-      run: echo "conda activate test_API" >> $GITHUB_ENV
+      run: conda activate test_API
     - name: Test with pytest
       run: pytest -s
