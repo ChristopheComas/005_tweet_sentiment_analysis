@@ -22,7 +22,7 @@ class InputText(BaseModel):
 # via local
 def load():
 #    model_path = "C:/Users/Cecil/Desktop/Formation/7_sentiment_analysis/API/LSTM.keras"
-    model_path = "LSTM.keras"
+    model_path = "API/LSTM.keras"
     model = load_model(model_path)
     return model
 model = load()
