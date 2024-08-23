@@ -5,6 +5,8 @@ import uvicorn
 import mlflow.keras
 import pandas as pd
 import os
+from pathlib import Path
+
 
 os.environ['MLFLOW_TRACKING_URI'] = 'http://localhost:5000'
 
@@ -21,8 +23,9 @@ class InputText(BaseModel):
 
 # via local
 def load():
-#    model_path = "C:/Users/Cecil/Desktop/Formation/7_sentiment_analysis/API/LSTM.keras"
-    model_path = "API/LSTM.keras"
+#    model_path = "API/LSTM.keras"
+    model_path = Path("API") / "LSTM.keras"
+    print("\n", model_path)
     model = load_model(model_path)
     return model
 model = load()
