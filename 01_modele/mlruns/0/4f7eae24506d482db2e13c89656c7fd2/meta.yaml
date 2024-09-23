@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/4f7eae24506d482db2e13c89656c7fd2/artifacts
+deleted_time: 1726049364186
+end_time: 1725882149505
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 4f7eae24506d482db2e13c89656c7fd2
+run_name: CNN_aucun_glove200
+run_uuid: 4f7eae24506d482db2e13c89656c7fd2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725881586343
+status: 3
+tags: []
+user_id: cc

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/7a947004656440e691217aa7ccee5517/artifacts
+deleted_time: 1726049364186
+end_time: 1725880219100
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 7a947004656440e691217aa7ccee5517
+run_name: CNN_advanced_aucun
+run_uuid: 7a947004656440e691217aa7ccee5517
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725879774186
+status: 3
+tags: []
+user_id: cc

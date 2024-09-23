@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/2646077b75a04a8aa7959b9522ec54fb/artifacts
+deleted_time: 1726003390914
+end_time: 1725950321022
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 2646077b75a04a8aa7959b9522ec54fb
+run_name: LSTM_aucun_aucun
+run_uuid: 2646077b75a04a8aa7959b9522ec54fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725946869896
+status: 4
+tags: []
+user_id: cc

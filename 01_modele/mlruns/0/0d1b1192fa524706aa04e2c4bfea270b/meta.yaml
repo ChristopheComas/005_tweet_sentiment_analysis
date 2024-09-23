@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/0d1b1192fa524706aa04e2c4bfea270b/artifacts
+end_time: 1725945165593
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0d1b1192fa524706aa04e2c4bfea270b
+run_name: CNN_aucun_google300
+run_uuid: 0d1b1192fa524706aa04e2c4bfea270b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725942539539
+status: 3
+tags: []
+user_id: cc

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/53af47fec3444d77a5da435d2805cceb/artifacts
+end_time: 1726149365904
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 53af47fec3444d77a5da435d2805cceb
+run_name: BERTtf_google-bert/bert-base-cased_aucun
+run_uuid: 53af47fec3444d77a5da435d2805cceb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726146296514
+status: 3
+tags: []
+user_id: cc

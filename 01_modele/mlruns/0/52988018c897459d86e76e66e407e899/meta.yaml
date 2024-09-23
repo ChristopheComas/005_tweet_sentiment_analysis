@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/0/52988018c897459d86e76e66e407e899/artifacts
+deleted_time: 1726046102800
+end_time: 1726045765227
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 52988018c897459d86e76e66e407e899
+run_name: BERTtf_google-bert/bert-base-cased_aucun
+run_uuid: 52988018c897459d86e76e66e407e899
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726045730194
+status: 3
+tags: []
+user_id: cc
